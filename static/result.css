@@ -1,0 +1,173 @@
+/* ================= RESET ================= */
+
+body {
+    background: #6366f1 !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+    min-height: 100vh;
+    background: #f4f7fb; /* same as dashboard */
+    color: #e5e7eb;
+}
+
+/* ================= NAVBAR ================= */
+.result-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: #e5e7eb; /* sidebar color */
+    color: #e5e7eb;
+}
+
+.result-navbar strong {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.result-navbar a {
+    text-decoration: none;
+    background: #6366f1; /* primary purple */
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.result-navbar a:hover {
+    background: #4f46e5;
+}
+
+/* ================= CONTAINER ================= */
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* ================= CARD ================= */
+.result-card {
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 35px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* ================= HEADER ================= */
+.result-header h1 {
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.result-header p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+/* ================= SCORE CIRCLE ================= */
+.score-circle {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7c6cf4, #6366f1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.score-circle span {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.score-circle small {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* ================= FEEDBACK ================= */
+.feedback-box {
+    background: #f1f5ff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.feedback-box h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.feedback-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #374151;
+}
+
+/* ================= ACTION BUTTONS ================= */
+.result-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.result-actions a {
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.result-actions a:first-child {
+    background: #6366f1;
+    color: #fff;
+}
+
+.result-actions a:first-child:hover {
+    background: #4f46e5;
+}
+
+.result-actions a.secondary {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.result-actions a.secondary:hover {
+    background: #d1d5db;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 500px) {
+    .result-card {
+        padding: 30px 22px;
+    }
+
+    .score-circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .score-circle span {
+        font-size: 28px;
+    }
+}

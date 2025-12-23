@@ -1,0 +1,183 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4f7fb, #eef2ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111827;
+}
+
+/* ================= WRAPPER ================= */
+.auth-wrapper {
+  width: 85%;
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 18px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= LEFT PANEL ================= */
+/* ================= LEFT SIDE FULL FILL ================= */
+.auth-left {
+  width: 45%;
+  background: linear-gradient(135deg, #7c6cf4, #6366f1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* IMAGE FULL & CLEAN */
+.auth-left .brand-logo {
+  width: 150%;          /* fill most of the panel */
+  max-width: 650px;
+  height: auto;
+  background: transparent;   /* remove white box feel */
+}
+
+
+.auth-left h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin-bottom: 25px;
+}
+
+/* ================= FEATURES ================= */
+.features {
+  list-style: none;
+}
+
+.features li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ================= RIGHT CARD ================= */
+.auth-card {
+  width: 55%;
+  padding: 45px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Glass effect support (optional class) */
+.glass {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+/* ================= HEADINGS ================= */
+.auth-card h2 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+/* ================= INPUTS ================= */
+.auth-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.auth-card input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* ================= BUTTON ================= */
+.primary-btn {
+  margin-top: 10px;
+  padding: 12px;
+  background: #6366f1;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}
+
+/* ================= ERROR ================= */
+.error {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 12px;
+  min-height: 18px;
+}
+
+/* ================= FOOTER ================= */
+.auth-footer {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .auth-wrapper {
+    flex-direction: column;
+  }
+
+  .auth-left,
+  .auth-card {
+    width: 100%;
+  }
+
+  .auth-left {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-wrapper {
+    width: 95%;
+  }
+
+  .auth-card {
+    padding: 30px 25px;
+  }
+}

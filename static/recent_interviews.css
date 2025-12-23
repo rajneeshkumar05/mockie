@@ -1,0 +1,132 @@
+/* ================= RECENT INTERVIEWS PAGE ================= */
+
+.recent-container {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.recent-container h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #111827;
+}
+
+/* ================= TABLE ================= */
+
+.recent-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.recent-table thead {
+    background: #f4f7fb;
+}
+
+.recent-table th {
+    text-align: left;
+    padding: 14px 12px;
+    font-weight: 600;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.recent-table td {
+    padding: 14px 12px;
+    color: #111827;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* ================= ROW HOVER ================= */
+
+.recent-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.recent-table tbody tr:hover {
+    background: #eef2ff;
+}
+
+/* ================= SCORE BADGES ================= */
+
+.score-badge {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.score-high {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.score-mid {
+    background: #fef9c3;
+    color: #854d0e;
+}
+
+.score-low {
+    background: #fee2e2;
+    color: #7f1d1d;
+}
+
+/* ================= ACTION BUTTON ================= */
+
+.view-btn {
+    padding: 8px 14px;
+    background: #6366f1;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.view-btn:hover {
+    background: #4f46e5;
+}
+
+/* ================= EMPTY STATE ================= */
+
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6b7280;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .recent-table thead {
+        display: none;
+    }
+
+    .recent-table tr {
+        display: block;
+        margin-bottom: 14px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    }
+
+    .recent-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 14px;
+        border-bottom: none;
+        font-size: 13px;
+    }
+
+    .recent-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #6b7280;
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | AI Mock Interview</title>
+    <link rel="stylesheet" href="/static/dashboard.css" />
+</head>
+<body>
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">MOCKIE</div>
+        <nav>
+    <a class="active" href="/dashboard">Dashboard</a>
+    <a href="/recent-interviews">Recent Interviews</a>
+    <a href="/jobs">Jobs</a>
+    <a href="/ai_careers.html">AI Careers</a>
+    <a href="/cv_optimization.html">CV Optimization</a>
+    <a href="/profile.html">Profile</a>
+    <a href="/support">Support</a>
+    <a href="/billing.html">Billing / Pricing</a>
+</nav>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+        
+        <!-- HEADER -->
+        <header class="topbar">
+            <h2>Dashboard</h2>
+            <div class="user">
+    Hello, <span id="username">User</span>
+</div>
+        </header>
+
+        <!-- HERO CARD -->
+        <section class="hero">
+            <h3>Ready for your next AI Mock Interview?</h3>
+            <p>Practice with AI interviewer and get instant feedback.</p>
+            <button onclick="goToSetup()">Start Interview</button>
+
+        </section>
+
+        <!-- STATS -->
+        <section class="stats">
+            <div class="stat-card">
+                <h4>Total Interviews</h4>
+                <span>5</span>
+            </div>
+            <div class="stat-card">
+                <h4>Completed</h4>
+                <span>4</span>
+            </div>
+            <div class="stat-card">
+                <h4>Avg Duration</h4>
+                <span>12 min</span>
+            </div>
+            <div class="stat-card">
+                <h4>Success Rate</h4>
+                <span>75%</span>
+            </div>
+        </section>
+
+        <!-- RECENT INTERVIEWS -->
+        <section class="card">
+            <h3>Recent Interviews</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Role</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>20 Dec</td>
+                    <td>Software Developer</td>
+                    <td>72%</td>
+                </tr>
+                <tr>
+                    <td>18 Dec</td>
+                    <td>Frontend Intern</td>
+                    <td>68%</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- TIPS -->
+        <section class="tips">
+            <h3>AI Interview Tips</h3>
+            <ul>
+                <li>Structure your answers clearly</li>
+                <li>Maintain eye contact with the camera</li>
+                <li>Speak confidently and calmly</li>
+            </ul>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="static/dashboard.js"></script>
+</body>
+</html>

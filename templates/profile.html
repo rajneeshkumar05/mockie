@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile | MOCKIE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/dashboard.css">
+    <link rel="stylesheet" href="/static/profile.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">MOCKIE</div>
+        <nav>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/recent-interviews">Recent Interviews</a>
+            <a href="/jobs">Jobs</a>
+            <a href="/ai-careers">AI Careers</a>
+            <a href="/cv-optimization">CV Optimization</a>
+            <a class="active" href="/profile">Profile</a>
+            <a href="/support">Support</a>
+            <a href="/billing">Billing / Pricing</a>
+    </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="topbar">
+            <h2>Profile</h2>
+            <div class="user">Your Account 👤</div>
+        </header>
+
+        <section class="profile-card">
+            <div class="avatar">👤</div>
+
+            <h3 id="name">Loading...</h3>
+            <p id="email"></p>
+
+            <div class="profile-info">
+                <div>
+                    <span>Role</span>
+                    <strong id="role"></strong>
+                </div>
+                <div>
+                    <span>Joined</span>
+                    <strong id="joined"></strong>
+                </div>
+            </div>
+
+            <button onclick="logout()" class="logout-btn">
+                Logout
+            </button>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="/static/profile.js"></script>
+</body>
+</html>

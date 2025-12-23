@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Interview</title>
+    <link rel="stylesheet" href="/static/interview.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+    <div class="logo">MOCKIE</div>
+    <div class="status">Live Interview</div>
+</div>
+
+<!-- Main -->
+<div class="interview-container">
+
+    <!-- Camera -->
+    <div class="card camera-card">
+        <video id="camera" autoplay muted></video>
+        <button class="camera-btn" onclick="startCamera()">📷 Enable Camera</button>
+
+    </div>
+
+    <!-- Question -->
+    <div class="card question-card">
+        <h3>Interview Question</h3>
+        <p id="question">
+            Loading question...
+        </p>
+    </div>
+
+</div>
+
+<!-- Answer -->
+<div class="answer-card">
+    <textarea id="answer" placeholder="Your answer will appear here..."></textarea>
+
+    <div class="action-row">
+        <button class="btn-secondary" onclick="startMic()">🎤 Start</button>
+        <button class="btn-secondary" onclick="stopMic()">⏹ Stop</button>
+        <button class="btn-primary" onclick="submitAnswer()">Submit</button>
+    </div>
+
+    <div class="action-row secondary">
+        <button class="btn-light" onclick="skipQuestion()">⏭ Skip</button>
+        <button class="btn-danger" onclick="endInterview()">⛔ End Interview</button>
+    </div>
+
+    <p id="feedback"></p>
+</div>
+
+<script src="/static/interview.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview Setup</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="/static/interviewsetup.css">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<div class="topbar">
+    <div class="logo">MOCKIE</div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+
+    <!-- LEFT: Setup Form -->
+    <div class="card">
+        <h2>Interview Setup</h2>
+
+        <label>Job Title</label>
+        <input id="job_title" placeholder="e.g. Backend Developer" />
+
+        <label>Job Description</label>
+        <textarea id="job_desc" rows="5"
+            placeholder="Paste the job description here (optional)"></textarea>
+
+        <div class="or">OR</div>
+
+        <label>Upload Resume (PDF)</label>
+        <input type="file" id="resume" accept=".pdf" />
+
+        <button class="btn" onclick="submitSetup()">
+            Start Interview
+        </button>
+    </div>
+
+    <!-- RIGHT: Info -->
+    <div class="card info">
+        <h3>How this works?</h3>
+        <p>
+            We analyze your job description and resume to generate
+            personalized interview questions using AI.
+        </p>
+
+        <div class="badges">
+            <span>AI-Powered</span>
+            <span>Resume-Based</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="/static/interviewsetup.js"></script>
+</body>
+</html>

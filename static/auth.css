@@ -1,0 +1,158 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4f7fb, #eef2ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111827;
+}
+
+/* ================= LOGIN CONTAINER ================= */
+.login-container {
+  width: 85%;
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 18px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= LEFT IMAGE SECTION ================= */
+.login-left {
+  width: 45%;
+  background: linear-gradient(135deg, #7c6cf4, #6366f1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* FULL FILL IMAGE FEEL */
+.login-illustration {
+  width: 150%;
+  max-width: 650px;
+  height: auto;
+}
+
+/* ================= RIGHT FORM ================= */
+.login-right {
+  width: 55%;
+  padding: 45px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ================= AUTH CARD ELEMENTS ================= */
+.auth-card h2 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.auth-card p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+/* ================= INPUTS ================= */
+.auth-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.auth-card input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* ================= BUTTON ================= */
+.auth-card button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #6366f1;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-card button:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}
+
+/* ================= ERROR ================= */
+.error {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 12px;
+  min-height: 18px;
+}
+
+/* ================= FOOTER ================= */
+.auth-footer {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-left,
+  .login-right {
+    width: 100%;
+  }
+
+  .login-left {
+    padding: 40px 0;
+  }
+
+  .login-illustration {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 95%;
+  }
+
+  .login-right {
+    padding: 30px 25px;
+  }
+}
+
+

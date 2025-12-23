@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 🔥 YE HEAD SECTION HAI -->
+    <meta charset="UTF-8">
+    <title>Recent Interviews | MOCKIE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Dashboard common CSS -->
+    <link rel="stylesheet" href="/static/dashboard.css">
+
+    <!-- 🔥 Recent Interviews ka separate CSS -->
+    <link rel="stylesheet" href="/static/recent_interviews.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">MOCKIE</div>
+        <nav>
+            <a href="/dashboard">Dashboard</a>
+            <a class="active" href="/recent-interviews">Recent Interviews</a>
+            <a href="/jobs">Jobs</a>
+            <a href="/ai-careers">AI Careers</a>
+            <a href="/cv-optimization">CV Optimization</a>
+            <a href="/profile">Profile</a>
+            <a href="/support">Support</a>
+            <a href="/billing">Billing / Pricing</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <h2>Recent Interviews</h2>
+
+        <div class="recent-container">
+            <table class="recent-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Role</th>
+                        <th>Score</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Date">20 Dec</td>
+                        <td data-label="Role">Software Developer</td>
+                        <td data-label="Score">
+                            <span class="score-badge score-high">72%</span>
+                        </td>
+                        <td data-label="Action">
+                            <a class="view-btn" href="/result?interview_id=5">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>

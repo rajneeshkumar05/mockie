@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up | MOCKIE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/authi.css">
+</head>
+<body>
+
+<div class="auth-wrapper">
+
+  <!-- LEFT SIDE : IMAGE ONLY -->
+  <div class="auth-left">
+    <img src="/static/padlock.png" class="brand-logo" alt="MOCKIE">
+  </div>
+
+  <!-- RIGHT SIGNUP CARD -->
+  <div class="auth-card glass">
+    <h2>Create Account</h2>
+    <p class="subtitle">Start your interview journey</p>
+
+    <input type="text" id="name" placeholder="Full name">
+    <input type="email" id="email" placeholder="Email address">
+    <input type="password" id="password" placeholder="Password">
+
+    <button class="primary-btn" onclick="signup()">Sign Up</button>
+
+    <p id="error" class="error"></p>
+
+    <div class="auth-footer">
+      Already have an account?
+      <a href="/login">Login</a>
+    </div>
+  </div>
+
+</div>
+
+<script src="/static/auth.js"></script>
+</body>
+</html>

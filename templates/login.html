@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login | MOCKIE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/auth.css">
+</head>
+<body>
+
+<div class="login-container">
+
+    <!-- LEFT IMAGE SECTION -->
+    <div class="login-left">
+        <img src="static/padlock.png" 
+     class="login-illustration" alt="Illustration">
+
+    </div>
+
+    <!-- RIGHT FORM SECTION -->
+    <div class="login-right auth-card">
+        <h2>Welcome Back</h2>
+        <p>Login to continue your AI interview practice</p>
+
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p id="error" class="error"></p>
+
+        <div class="auth-footer">
+            Don’t have an account?
+            <a href="/signup">Sign up</a>
+        </div>
+    </div>
+
+</div>
+
+<script src="/static/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Optimization | MOCKIE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/dashboard.css">
+    <link rel="stylesheet" href="/static/cv_optimization.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">MOCKIE</div>
+        <nav>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/recent-interviews">Recent Interviews</a>
+            <a href="/jobs">Jobs</a>
+            <a href="/ai-careers">AI Careers</a>
+            <a class="active" href="/cv-optimization">CV Optimization</a>
+            <a href="/profile">Profile</a>
+            <a href="/support">Support</a>
+            <a href="/billing">Billing / Pricing</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="topbar">
+            <h2>CV Optimization</h2>
+            <div class="user">Improve your resume with AI 📄</div>
+        </header>
+
+        <!-- UPLOAD SECTION -->
+        <section class="cv-upload-card">
+            <h3>Upload Your Resume</h3>
+            <p>Upload PDF/DOCX and get instant AI feedback.</p>
+
+            <!-- ✅ ID ADDED -->
+            <input type="file" id="resume" accept=".pdf,.doc,.docx">
+
+            <!-- ✅ JS CONNECTED -->
+            <button class="primary-btn" onclick="analyzeCV()">
+                Analyze CV
+            </button>
+        </section>
+
+        <!-- SCORE CARDS -->
+        <section class="cv-stats">
+
+            <div class="cv-card">
+                <h4>ATS Score</h4>
+                <span id="ats-score" class="score green">--%</span>
+            </div>
+
+            <div class="cv-card">
+                <h4>Keyword Match</h4>
+                <span id="keyword-score" class="score yellow">--%</span>
+            </div>
+
+            <div class="cv-card">
+                <h4>Formatting</h4>
+                <span id="formatting-score" class="score green">--%</span>
+            </div>
+
+            <div class="cv-card">
+                <h4>Clarity</h4>
+                <span id="clarity-score" class="score red">--%</span>
+            </div>
+
+        </section>
+
+        <!-- SUGGESTIONS -->
+        <section class="cv-suggestions">
+            <h3>AI Suggestions</h3>
+            <ul id="suggestions"></ul>
+        </section>
+
+        <!-- ACTION -->
+        <section class="cv-action">
+            <a href="/start-interview" class="mock-btn">
+                Practice Interview Based on CV
+            </a>
+        </section>
+
+    </main>
+
+</div>
+
+<!-- ✅ JS AT BOTTOM -->
+<script src="/static/cv_optimization.js"></script>
+</body>
+</html>
